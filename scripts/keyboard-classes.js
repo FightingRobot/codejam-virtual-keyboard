@@ -373,6 +373,8 @@ class Keyboard {
 
         if (event.code == 'ShiftLeft' || event.code == 'ShiftRight') {
             keyboard.shiftUp();
+            document.querySelector('.ShiftRight').classList.remove('active');
+            document.querySelector('.ShiftLeft').classList.remove('active');
         }
     }
 
