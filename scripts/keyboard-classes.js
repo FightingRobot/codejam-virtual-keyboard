@@ -410,7 +410,7 @@ class Keyboard {
             keyboard.keyboardState.clicked.classList.remove('active');
         }
 
-        if (keyboard.keyboardState.clicked.className.includes('ShiftLeft') || this.keyboardState.clicked.className.includes('ShiftRight')) {
+        if (keyboard.keyboardState.clicked.className.includes('ShiftLeft') || keyboard.keyboardState.clicked.className.includes('ShiftRight')) {
             keyboard.shiftUp();
         }
     }
