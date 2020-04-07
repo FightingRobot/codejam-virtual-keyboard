@@ -327,8 +327,10 @@ class Keyboard {
     }
 
     if (this.keyboardState.clicked.className.includes('ShiftLeft') || this.keyboardState.clicked.className.includes('ShiftRight')
-    || this.keyboardOrMouseCheck(event).className.includes('ShiftLeft') || this.keyboardOrMouseCheck(event).className.includes('ShiftLeft')) {
+    || this.keyboardOrMouseCheck(event).className.includes('ShiftLeft') || this.keyboardOrMouseCheck(event).className.includes('ShiftRight')) {
       this.shiftUp(event);
+      document.querySelector('.ShiftLeft').classList.remove('active');
+      document.querySelector('.ShiftRight').classList.remove('active');
     }
   }
 }
