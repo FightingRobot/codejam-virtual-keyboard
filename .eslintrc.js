@@ -4,7 +4,7 @@ module.exports = {
     es6: true,
   },
   extends: [
-    'airbnb-base/legacy',
+    'airbnb-base',
 	
   ],
   globals: {
@@ -18,9 +18,11 @@ module.exports = {
 	  "semi": "off",
 	  "no-plusplus": "off",
       "quotes": ["error", "single"],
-	  "no-use-before-define": "off",
-	  'class-methods-use-this': 'off',
-	  'default-case': 'off',
+    'class-methods-use-this': 'off',
+    'no-return-assign': 'off',
+    'no-param-reassign': 'off',
+    'default-case': 'off',
+    'no-unused-expressions': 'off',
 	  'no-restricted-syntax': 'off',
   },
 };
