@@ -23,6 +23,7 @@ module.exports = {
     'no-param-reassign': 'off',
     'default-case': 'off',
     'no-unused-expressions': 'off',
-	  'no-restricted-syntax': 'off',
+    'no-restricted-syntax': 'off',
+    'linebreak-style': 'off',
   },
 };
